@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="产品详情 - Northern Sky Crystals">
+    <title>产品详情 | Northern Sky Crystals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">Northern Sky</a>
+            </div>
+            <div class="nav-right">
+                <button class="back-btn" onclick="goBack()" title="返回">←</button>
+                <button class="lang-switch" id="langSwitch">EN</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 侧边菜单 -->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <button class="menu-close" id="menuClose">&times;</button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="index.html" data-zh="首页" data-en="Home">首页</a></li>
+            <li><a href="products.html" data-zh="全部产品" data-en="Shop All">全部产品</a></li>
+            <li><a href="#necklaces" data-zh="项链" data-en="Necklaces">项链</a></li>
+            <li><a href="#bracelets" data-zh="手链" data-en="Bracelets">手链</a></li>
+            <li><a href="#crystals" data-zh="水晶摆件" data-en="Crystals">水晶摆件</a></li>
+            <li><a href="#lamps" data-zh="水晶灯" data-en="Lamps">水晶灯</a></li>
+            <li><a href="about.html" data-zh="关于我们" data-en="About Us">关于我们</a></li>
+            <li style="border-top: 2px solid #eee; margin-top: 10px; padding-top: 10px;">
+                <a href="admin.html" data-zh="🔧 管理后台" data-en="🔧 Admin Panel" style="color: #667eea; font-weight: 600;">🔧 管理后台</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 产品详情 -->
+    <section class="product-detail">
+        <div class="container">
+            <!-- 返回按钮 -->
+            <a href="products.html" class="back-link">
+                <span>←</span>
+                <span data-zh="返回产品列表" data-en="Back to Products">返回产品列表</span>
+            </a>
+
+            <div class="product-detail-content">
+                <!-- 产品图片 -->
+                <div class="product-detail-image">
+                    <div class="main-image" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c0 100%);">
+                        <span class="product-placeholder-large">🌟</span>
+                    </div>
+                    <div class="image-gallery">
+                        <div class="gallery-thumb active" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c0 100%);">
+                            <span>🌟</span>
+                        </div>
+                        <div class="gallery-thumb" style="background: linear-gradient(135deg, #ffe8d6 0%, #ffd4b8 100%);">
+                            <span>✨</span>
+                        </div>
+                        <div class="gallery-thumb" style="background: linear-gradient(135deg, #fff5e8 0%, #ffe8d0 100%);">
+                            <span>💫</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品信息 -->
+                <div class="product-detail-info">
+                    <div class="product-badge" data-zh="新品上市" data-en="NEW FAVOURITE">新品上市</div>
+                    <h1 class="product-detail-title" data-zh="太阳追逐者水晶项链" data-en="Sun Chaser Crystal Beaded Necklace">太阳追逐者水晶项链</h1>
+                    
+                    <div class="product-brand">
+                        <span data-zh="品牌：" data-en="Brand: ">品牌：</span>
+                        <span>NORTHERN SKY</span>
+                    </div>
+
+                    <div class="product-detail-price">
+                        <span class="price-amount">RM 222.00 MYR</span>
+                        <span class="price-note" data-zh="含税" data-en="Tax included">含税</span>
+                    </div>
+
+                    <div class="product-rating-detail">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(28)</span>
+                    </div>
+
+                    <!-- 尺寸选择 -->
+                    <div class="product-options">
+                        <div class="option-group">
+                            <div class="option-header">
+                                <label data-zh="尺寸" data-en="SIZE">尺寸</label>
+                                <a href="#" class="size-chart" data-zh="尺寸指南" data-en="SIZE CHART">尺寸指南</a>
+                            </div>
+                            <div class="option-buttons">
+                                <button class="option-btn active">38CM</button>
+                                <button class="option-btn">45CM</button>
+                            </div>
+                        </div>
+
+                        <!-- 材质选择 -->
+                        <div class="option-group">
+                            <label data-zh="链扣材质" data-en="ENDS MATERIAL">链扣材质</label>
+                            <div class="option-buttons">
+                                <button class="option-btn color-btn active" style="background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);" title="Gold Filled">
+                                    <span class="color-check">✓</span>
+                                </button>
+                                <button class="option-btn color-btn" style="background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);" title="Silver">
+                                    <span class="color-check">✓</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 购买按钮 -->
+                    <div class="product-actions">
+                        <button class="btn-add-cart" data-zh="加入购物车" data-en="ADD TO CART">加入购物车</button>
+                        <button class="btn-buy-now" data-zh="立即购买" data-en="Buy with ShopPay">立即购买</button>
+                    </div>
+
+                    <!-- 产品描述 -->
+                    <div class="product-description">
+                        <h3 data-zh="产品描述" data-en="Description">产品描述</h3>
+                        <p data-zh="这款太阳追逐者水晶项链采用天然水晶珠精心手工制作，每一颗珠子都经过精心挑选。温暖的色调象征着太阳的能量，为佩戴者带来积极向上的力量。" data-en="This Sun Chaser Crystal Necklace is carefully handcrafted with natural crystal beads, each bead carefully selected. The warm tones symbolize the energy of the sun, bringing positive power to the wearer.">
+                            这款太阳追逐者水晶项链采用天然水晶珠精心手工制作，每一颗珠子都经过精心挑选。温暖的色调象征着太阳的能量，为佩戴者带来积极向上的力量。
+                        </p>
+                        
+                        <h4 data-zh="特点：" data-en="Features:">特点：</h4>
+                        <ul>
+                            <li data-zh="✨ 天然水晶珠，每件独一无二" data-en="✨ Natural crystal beads, each piece unique">✨ 天然水晶珠，每件独一无二</li>
+                            <li data-zh="🌟 手工制作，小批量生产" data-en="🌟 Handmade, small batch production">🌟 手工制作，小批量生产</li>
+                            <li data-zh="💫 可选金色或银色链扣" data-en="💫 Available in gold or silver clasp">💫 可选金色或银色链扣</li>
+                            <li data-zh="🎨 温暖的大地色调" data-en="🎨 Warm earth tones">🎨 温暖的大地色调</li>
+                            <li data-zh="📏 两种长度可选：38cm / 45cm" data-en="📏 Two lengths available: 38cm / 45cm">📏 两种长度可选：38cm / 45cm</li>
+                        </ul>
+
+                        <h4 data-zh="保养说明：" data-en="Care Instructions:">保养说明：</h4>
+                        <ul>
+                            <li data-zh="避免接触化学物质和香水" data-en="Avoid contact with chemicals and perfumes">避免接触化学物质和香水</li>
+                            <li data-zh="不佩戴时请存放在干燥处" data-en="Store in a dry place when not wearing">不佩戴时请存放在干燥处</li>
+                            <li data-zh="用软布轻轻擦拭清洁" data-en="Clean gently with a soft cloth">用软布轻轻擦拭清洁</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 搭配推荐 -->
+    <section class="shop-the-look">
+        <div class="container">
+            <h2 class="section-title" data-zh="搭配推荐" data-en="Shop the Look">搭配推荐</h2>
+            <div class="look-content">
+                <div class="look-image" style="background: linear-gradient(135deg, #fff5e8 0%, #ffe8d0 100%);">
+                    <span class="look-placeholder">👤</span>
+                </div>
+                <div class="look-products">
+                    <a href="product-detail.html?id=1" class="look-product-card">
+                        <div class="look-product-image" style="background: linear-gradient(135deg, #ffe8d6 0%, #ffd4b8 100%);">
+                            <span>☀️</span>
+                        </div>
+                        <div class="look-product-info">
+                            <h4 data-zh="岛屿魅力混搭项链" data-en="Island Charms Mix n Match Necklace">岛屿魅力混搭项链</h4>
+                            <p>RM 176.00 MYR</p>
+                            <div class="color-options">
+                                <span class="color-dot" style="background: #ffd6d6;"></span>
+                                <span class="color-dot" style="background: #fff9e6;"></span>
+                                <span class="color-dot" style="background: #ff6b6b;"></span>
+                                <span class="more-colors">+1</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 相关产品 -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title" data-zh="您可能还喜欢" data-en="You May Also Like">您可能还喜欢</h2>
+            <div class="product-grid">
+                <a href="product-detail.html?id=2" class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffd6d6 0%, #ffb8b8 100%);">
+                        <span class="product-placeholder">💖</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="粉晶月光石手链" data-en="Rose Quartz Moonstone Bracelet">粉晶月光石手链</h3>
+                        <p class="product-price">RM 138.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=3" class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #e8f4f8 0%, #d0e8f0 100%);">
+                        <span class="product-placeholder">🌊</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="海蓝宝石水晶手链" data-en="Aquamarine Crystal Bracelet">海蓝宝石水晶手链</h3>
+                        <p class="product-price">RM 183.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=4" class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #f0e8ff 0%, #d8c8f0 100%);">
+                        <span class="product-placeholder">🔮</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="紫水晶能量手链" data-en="Amethyst Energy Bracelet">紫水晶能量手链</h3>
+                        <p class="product-price">RM 165.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-zh="关于我们" data-en="About">关于我们</h4>
+                    <ul>
+                        <li><a href="about.html" data-zh="品牌故事" data-en="Our Story">品牌故事</a></li>
+                        <li><a href="#" data-zh="联系我们" data-en="Contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-zh="购物指南" data-en="Shop">购物指南</h4>
+                    <ul>
+                        <li><a href="products.html" data-zh="全部产品" data-en="All Products">全部产品</a></li>
+                        <li><a href="#" data-zh="新品上市" data-en="New Arrivals">新品上市</a></li>
+                        <li><a href="#" data-zh="特惠活动" data-en="Sale">特惠活动</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-zh="关注我们" data-en="Follow Us">关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Northern Sky Crystals. <span data-zh="保留所有权利" data-en="All rights reserved">保留所有权利</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

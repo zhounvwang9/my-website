@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Northern Sky Crystals - 产品列表">
+    <title>产品列表 | Northern Sky Crystals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">Northern Sky</a>
+            </div>
+            <div class="nav-right">
+                <button class="back-btn" onclick="goBack()" title="返回">←</button>
+                <button class="lang-switch" id="langSwitch">EN</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 侧边菜单 -->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <button class="menu-close" id="menuClose">&times;</button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="index.html" data-zh="首页" data-en="Home">首页</a></li>
+            <li><a href="products.html" data-zh="全部产品" data-en="Shop All">全部产品</a></li>
+            <li><a href="#necklaces" data-zh="项链" data-en="Necklaces">项链</a></li>
+            <li><a href="#bracelets" data-zh="手链" data-en="Bracelets">手链</a></li>
+            <li><a href="#crystals" data-zh="水晶摆件" data-en="Crystals">水晶摆件</a></li>
+            <li><a href="#lamps" data-zh="水晶灯" data-en="Lamps">水晶灯</a></li>
+            <li><a href="about.html" data-zh="关于我们" data-en="About Us">关于我们</a></li>
+            <li style="border-top: 2px solid #eee; margin-top: 10px; padding-top: 10px;">
+                <a href="admin.html" data-zh="🔧 管理后台" data-en="🔧 Admin Panel" style="color: #667eea; font-weight: 600;">🔧 管理后台</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-zh="全部产品" data-en="All Products">全部产品</h1>
+            <p class="page-subtitle" data-zh="探索我们的手工水晶首饰系列" data-en="Explore our handmade crystal jewelry collection">探索我们的手工水晶首饰系列</p>
+        </div>
+    </section>
+
+    <!-- 筛选栏 -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all" data-zh="全部" data-en="All">全部</button>
+                <button class="filter-btn" data-category="necklaces" data-zh="项链" data-en="Necklaces">项链</button>
+                <button class="filter-btn" data-category="bracelets" data-zh="手链" data-en="Bracelets">手链</button>
+                <button class="filter-btn" data-category="crystals" data-zh="水晶" data-en="Crystals">水晶</button>
+                <button class="filter-btn" data-category="lamps" data-zh="水晶灯" data-en="Lamps">水晶灯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品网格 -->
+    <section class="products-section">
+        <div class="container">
+            <div class="product-grid" id="productGrid">
+                <!-- 项链类产品 -->
+                <a href="product-detail.html?id=1" class="product-card" data-category="necklaces">
+                    <div class="product-image" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c0 100%);">
+                        <span class="product-placeholder">🌟</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="太阳追逐者水晶项链" data-en="Sun Chaser Crystal Necklace">太阳追逐者水晶项链</h3>
+                        <p class="product-price">RM 222.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=7" class="product-card" data-category="necklaces">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffe8d6 0%, #ffd4b8 100%);">
+                        <span class="product-placeholder">☀️</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="岛屿魅力混搭项链" data-en="Island Charms Mix n Match Necklace">岛屿魅力混搭项链</h3>
+                        <p class="product-price">RM 176.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=8" class="product-card" data-category="necklaces">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffd6e8 0%, #ffb8d6 100%);">
+                        <span class="product-placeholder">🌸</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="粉色梦境项链" data-en="Pink Dream Necklace">粉色梦境项链</h3>
+                        <p class="product-price">RM 198.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <!-- 手链类产品 - 生肖系列 -->
+                <a href="product-detail.html?id=9" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/gemini-bracelet.jpg" alt="Gemini Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #fff0e8 0%, #ffd8c8 100%); display: none;">
+                            <span class="product-placeholder">♊</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="双子座生肖手链" data-en="Gemini Zodiac Bracelet">双子座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=10" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/leo-bracelet.jpg" alt="Leo Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #e8e8ff 0%, #d0d0f0 100%); display: none;">
+                            <span class="product-placeholder">♌</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="狮子座生肖手链" data-en="Leo Zodiac Bracelet">狮子座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=3" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/scorpio-bracelet.jpg" alt="Scorpio Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #e8f4f8 0%, #d0e8f0 100%); display: none;">
+                            <span class="product-placeholder">♏</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="天蝎座生肖手链" data-en="Scorpio Zodiac Bracelet">天蝎座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=4" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/pisces-bracelet.jpg" alt="Pisces Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #f0e8ff 0%, #d8c8f0 100%); display: none;">
+                            <span class="product-placeholder">♓</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="双鱼座生肖手链" data-en="Pisces Zodiac Bracelet">双鱼座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=11" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/virgo-bracelet.jpg" alt="Virgo Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #ffe8f0 0%, #ffc8d8 100%); display: none;">
+                            <span class="product-placeholder">♍</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="处女座生肖手链" data-en="Virgo Zodiac Bracelet">处女座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=6" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/taurus-bracelet.jpg" alt="Taurus Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #e8f8e8 0%, #c8e8c8 100%); display: none;">
+                            <span class="product-placeholder">♉</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="金牛座生肖手链" data-en="Taurus Zodiac Bracelet">金牛座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=12" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/libra-bracelet.jpg" alt="Libra Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #fff5e8 0%, #ffe8d0 100%); display: none;">
+                            <span class="product-placeholder">♎</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="天秤座生肖手链" data-en="Libra Zodiac Bracelet">天秤座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=13" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/cancer-bracelet.jpg" alt="Cancer Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #ffd6d6 0%, #ffb8b8 100%); display: none;">
+                            <span class="product-placeholder">♋</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="巨蟹座生肖手链" data-en="Cancer Zodiac Bracelet">巨蟹座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=14" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/aries-bracelet.jpg" alt="Aries Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #ffe8d6 0%, #ffd4b8 100%); display: none;">
+                            <span class="product-placeholder">♈</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="白羊座生肖手链" data-en="Aries Zodiac Bracelet">白羊座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=15" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/capricorn-bracelet.jpg" alt="Capricorn Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c0 100%); display: none;">
+                            <span class="product-placeholder">♑</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="摩羯座生肖手链" data-en="Capricorn Zodiac Bracelet">摩羯座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=16" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/aquarius-bracelet.jpg" alt="Aquarius Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #e8e8ff 0%, #d0d0f0 100%); display: none;">
+                            <span class="product-placeholder">♒</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="水瓶座生肖手链" data-en="Aquarius Zodiac Bracelet">水瓶座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=17" class="product-card" data-category="bracelets">
+                    <div class="product-image-wrapper">
+                        <img src="images/sagittarius-bracelet.jpg" alt="Sagittarius Zodiac Bracelet" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-image-fallback" style="background: linear-gradient(135deg, #f0e8ff 0%, #e0d0f0 100%); display: none;">
+                            <span class="product-placeholder">♐</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="射手座生肖手链" data-en="Sagittarius Zodiac Bracelet">射手座生肖手链</h3>
+                        <p class="product-price" data-zh="从 RM 113.00 起" data-en="From RM 113.00 MYR">从 RM 113.00 起</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <!-- 水晶类产品 -->
+                <a href="product-detail.html?id=12" class="product-card" data-category="crystals">
+                    <div class="product-image" style="background: linear-gradient(135deg, #d6f5d6 0%, #b8e8b8 100%);">
+                        <span class="product-placeholder">💚</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="绿东陵原石" data-en="Green Aventurine Raw Stone">绿东陵原石</h3>
+                        <p class="product-price">RM 88.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=13" class="product-card" data-category="crystals">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffe8ff 0%, #f0d0f0 100%);">
+                        <span class="product-placeholder">💜</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="紫水晶簇" data-en="Amethyst Cluster">紫水晶簇</h3>
+                        <p class="product-price">RM 156.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=14" class="product-card" data-category="crystals">
+                    <div class="product-image" style="background: linear-gradient(135deg, #fff8e8 0%, #f5e8d0 100%);">
+                        <span class="product-placeholder">🤍</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="白水晶球" data-en="Clear Quartz Sphere">白水晶球</h3>
+                        <p class="product-price">RM 128.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <!-- 水晶灯类产品 -->
+                <a href="product-detail.html?id=5" class="product-card" data-category="lamps">
+                    <div class="product-image" style="background: linear-gradient(135deg, #fff9e6 0%, #f5ecd0 100%);">
+                        <span class="product-placeholder">🕯️</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="亚硒酸盐水晶灯" data-en="Selenite Crystal Lamp">亚硒酸盐水晶灯</h3>
+                        <p class="product-price">RM 288.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=15" class="product-card" data-category="lamps">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffe8d6 0%, #ffd4b8 100%);">
+                        <span class="product-placeholder">🧡</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="喜马拉雅盐灯" data-en="Himalayan Salt Lamp">喜马拉雅盐灯</h3>
+                        <p class="product-price">RM 198.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+
+                <a href="product-detail.html?id=16" class="product-card" data-category="lamps">
+                    <div class="product-image" style="background: linear-gradient(135deg, #f0e8ff 0%, #e0d0f0 100%);">
+                        <span class="product-placeholder">✨</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-zh="紫晶洞灯" data-en="Amethyst Geode Lamp">紫晶洞灯</h3>
+                        <p class="product-price">RM 368.00</p>
+                        <div class="product-rating">★★★★★</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-zh="关于我们" data-en="About">关于我们</h4>
+                    <ul>
+                        <li><a href="about.html" data-zh="品牌故事" data-en="Our Story">品牌故事</a></li>
+                        <li><a href="#" data-zh="联系我们" data-en="Contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-zh="购物指南" data-en="Shop">购物指南</h4>
+                    <ul>
+                        <li><a href="products.html" data-zh="全部产品" data-en="All Products">全部产品</a></li>
+                        <li><a href="#" data-zh="新品上市" data-en="New Arrivals">新品上市</a></li>
+                        <li><a href="#" data-zh="特惠活动" data-en="Sale">特惠活动</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-zh="关注我们" data-en="Follow Us">关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Northern Sky Crystals. <span data-zh="保留所有权利" data-en="All rights reserved">保留所有权利</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="关于 Northern Sky Crystals">
+    <title>关于我们 | Northern Sky Crystals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">Northern Sky</a>
+            </div>
+            <div class="nav-right">
+                <button class="back-btn" onclick="goBack()" title="返回">←</button>
+                <button class="lang-switch" id="langSwitch">EN</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 侧边菜单 -->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <button class="menu-close" id="menuClose">&times;</button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="index.html" data-zh="首页" data-en="Home">首页</a></li>
+            <li><a href="products.html" data-zh="全部产品" data-en="Shop All">全部产品</a></li>
+            <li><a href="#necklaces" data-zh="项链" data-en="Necklaces">项链</a></li>
+            <li><a href="#bracelets" data-zh="手链" data-en="Bracelets">手链</a></li>
+            <li><a href="#crystals" data-zh="水晶摆件" data-en="Crystals">水晶摆件</a></li>
+            <li><a href="#lamps" data-zh="水晶灯" data-en="Lamps">水晶灯</a></li>
+            <li><a href="about.html" data-zh="关于我们" data-en="About Us">关于我们</a></li>
+            <li style="border-top: 2px solid #eee; margin-top: 10px; padding-top: 10px;">
+                <a href="admin.html" data-zh="🔧 管理后台" data-en="🔧 Admin Panel" style="color: #667eea; font-weight: 600;">🔧 管理后台</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 关于页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-zh="关于 Northern Sky" data-en="About Northern Sky">关于 Northern Sky</h1>
+            <p class="page-subtitle" data-zh="手工水晶首饰的故事" data-en="The Story of Handmade Crystal Jewelry">手工水晶首饰的故事</p>
+        </div>
+    </section>
+
+    <!-- 品牌故事 -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-story">
+                <div class="story-image" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c0 100%);">
+                    <span class="story-icon">✨</span>
+                </div>
+                <div class="story-text">
+                    <h2 data-zh="我们的故事" data-en="Our Story">我们的故事</h2>
+                    <p data-zh="Northern Sky Crystals 诞生于对天然水晶和手工艺的热爱。我们相信每一块水晶都蕴含着独特的能量，每一件首饰都应该是独一无二的艺术品。" data-en="Northern Sky Crystals was born from a love of natural crystals and craftsmanship. We believe that every crystal contains unique energy, and every piece of jewelry should be a unique work of art.">
+                        Northern Sky Crystals 诞生于对天然水晶和手工艺的热爱。我们相信每一块水晶都蕴含着独特的能量,每一件首饰都应该是独一无二的艺术品。
+                    </p>
+                    <p data-zh="在墨尔本的工作室里，我们精心挑选每一颗水晶珠，用心制作每一件作品。小批量生产确保了每件首饰的品质和独特性。" data-en="In our Melbourne studio, we carefully select each crystal bead and craft each piece with care. Small batch production ensures the quality and uniqueness of each piece of jewelry.">
+                        在墨尔本的工作室里，我们精心挑选每一颗水晶珠，用心制作每一件作品。小批量生产确保了每件首饰的品质和独特性。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 核心价值 -->
+            <div class="values-section">
+                <h2 class="section-title" data-zh="我们的价值观" data-en="Our Values">我们的价值观</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🌿</div>
+                        <h3 data-zh="天然材质" data-en="Natural Materials">天然材质</h3>
+                        <p data-zh="只使用天然水晶和宝石，保持材料的纯净与能量。" data-en="Only natural crystals and gemstones are used to maintain the purity and energy of the materials.">
+                            只使用天然水晶和宝石，保持材料的纯净与能量。
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">✋</div>
+                        <h3 data-zh="手工制作" data-en="Handmade">手工制作</h3>
+                        <p data-zh="每一件作品都由经验丰富的工匠手工制作，注入爱与关怀。" data-en="Each piece is handcrafted by experienced artisans, infused with love and care.">
+                            每一件作品都由经验丰富的工匠手工制作，注入爱与关怀。
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💎</div>
+                        <h3 data-zh="独特设计" data-en="Unique Design">独特设计</h3>
+                        <p data-zh="每件首饰都是独一无二的，因为每块水晶都有自己的特性。" data-en="Each piece of jewelry is unique because every crystal has its own characteristics.">
+                            每件首饰都是独一无二的，因为每块水晶都有自己的特性。
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🌍</div>
+                        <h3 data-zh="可持续发展" data-en="Sustainability">可持续发展</h3>
+                        <p data-zh="我们致力于环保和可持续的生产方式，尊重自然。" data-en="We are committed to environmentally friendly and sustainable production methods, respecting nature.">
+                            我们致力于环保和可持续的生产方式，尊重自然。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 制作工艺 -->
+            <div class="craftsmanship-section">
+                <h2 class="section-title" data-zh="制作工艺" data-en="Craftsmanship">制作工艺</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3 data-zh="精选材料" data-en="Select Materials">精选材料</h3>
+                        <p data-zh="从全球各地采购最优质的天然水晶和宝石。" data-en="Source the finest natural crystals and gemstones from around the world.">
+                            从全球各地采购最优质的天然水晶和宝石。
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3 data-zh="设计构思" data-en="Design Concept">设计构思</h3>
+                        <p data-zh="根据水晶的特性和能量，设计独特的首饰款式。" data-en="Design unique jewelry styles based on the characteristics and energy of crystals.">
+                            根据水晶的特性和能量，设计独特的首饰款式。
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3 data-zh="手工制作" data-en="Handcraft">手工制作</h3>
+                        <p data-zh="工匠们用心串联每一颗珠子，确保完美的品质。" data-en="Artisans carefully string each bead to ensure perfect quality.">
+                            工匠们用心串联每一颗珠子，确保完美的品质。
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3 data-zh="质量检验" data-en="Quality Check">质量检验</h3>
+                        <p data-zh="每件作品都经过严格的质量检验才会送到您手中。" data-en="Each piece undergoes rigorous quality inspection before reaching you.">
+                            每件作品都经过严格的质量检验才会送到您手中。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 联系信息 -->
+            <div class="contact-section">
+                <h2 class="section-title" data-zh="联系我们" data-en="Contact Us">联系我们</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h4 data-zh="地址" data-en="Address">地址</h4>
+                            <p>Shop 11, The Lido Centre<br>673 Glenferrie Road, Hawthorn<br>Melbourne, Victoria, Australia 3122</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-text">
+                            <h4 data-zh="邮箱" data-en="Email">邮箱</h4>
+                            <p>hello@northernsky.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-text">
+                            <h4 data-zh="社交媒体" data-en="Social Media">社交媒体</h4>
+                            <p>@northernsky_</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-zh="关于我们" data-en="About">关于我们</h4>
+                    <ul>
+                        <li><a href="about.html" data-zh="品牌故事" data-en="Our Story">品牌故事</a></li>
+                        <li><a href="#" data-zh="联系我们" data-en="Contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-zh="购物指南" data-en="Shop">购物指南</h4>
+                    <ul>
+                        <li><a href="products.html" data-zh="全部产品" data-en="All Products">全部产品</a></li>
+                        <li><a href="#" data-zh="新品上市" data-en="New Arrivals">新品上市</a></li>
+                        <li><a href="#" data-zh="特惠活动" data-en="Sale">特惠活动</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-zh="关注我们" data-en="Follow Us">关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Northern Sky Crystals. <span data-zh="保留所有权利" data-en="All rights reserved">保留所有权利</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
